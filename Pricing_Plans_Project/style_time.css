@@ -1,0 +1,193 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elegant Background */
+body {
+  background-color: #f5f5dc; /* Lighter beige for a more polished look */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Refined Heading */
+.heading {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   height: 5rem;
+   width: 80rem;
+   margin: 20px auto;
+   font-size: 42px;
+   font-weight: bold;
+   letter-spacing: 2px;
+
+   /* Premium Gradient */
+   background: linear-gradient(135deg, #000428, #004e92);
+
+   /* Elegant Text Effect */
+   color: white;
+   text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+
+   /* Smooth Rounded Edges */
+   border-radius: 15px;
+
+   /* Soft Shadow for Depth */
+   box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.3);
+
+   /* Smooth Hover Animation */
+   transition: all 0.3s ease-in-out;
+}
+
+.heading:hover {
+   transform: scale(1.10);
+   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Smart Container Handling */
+.container {
+   width: 100%;
+   min-height: 85vh; /* Reduces extra scroll */
+   margin-top: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 40px;
+   padding: 20px;
+}
+
+/* More Professional Plan Design */
+.plan {
+   width: 320px;
+   height: 520px;
+   border: 2px solid #87CEEB; /* More defined border */
+   border-radius: 20px;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: center;
+   background: white;
+   
+   /* Elegant Shadow for a Lifted Effect */
+   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+
+   /* Smooth Hover Effect */
+   transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects for More Interaction */
+.plan:hover {
+   transform: translateY(-5px);
+   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+   border-color: #00bfff;
+}
+
+.plan:focus-within {
+   box-shadow: 0px 0px 15px rgba(135, 206, 235, 0.8);
+}
+
+/* Different Plan Backgrounds */
+#plan1 {
+   background-color: #d1eaff;
+}
+
+#plan2 {
+   background-color: #87CEEB;
+}
+
+#plan3 {   
+   background-color: #048dbb;
+}
+
+/* Better List Style */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 150px;
+  gap: 12px;
+  font-size: 17px;
+}
+
+/* Better Spacing for List Items */
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+/* Typography Refinements */
+.plan-title {
+  font-family: 'Pacifico', sans-serif;
+  font-size: 38px;
+  color: #0d045c;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+.price {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 32px;
+   font-weight: 600;
+   color: #222;
+}
+
+.price-tag {
+  color: #FFC107;
+  font-size: 15px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+
+.feature-tag {
+  font-size: 14px;
+  color: #252424;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.cross {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+
+.cross-tag {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* More Modern Button */
+.signup {
+  background: linear-gradient(135deg, #03A9F4, #0288D1);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(27, 12, 163, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for Button */
+.signup:hover {
+  background: linear-gradient(135deg, #0288D1, #01579B);
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(27, 12, 163, 0.7);
+}
