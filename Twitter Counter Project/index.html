@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Input Practice</title>
+  <link rel="stylesheet" href="style_time.css">
+</head>
+<body>
+   <div class="tweet-flex-container">
+    <!-- Left: Character Counter -->
+    <div class="tweet-counter-panel">
+      <h1>Tweet character counter</h1>
+      <p class="subtitle">Fine-tune your tweets without the risk of tweeting by mistake.</p>
+      <p class="updated"><strong>#Updated:</strong> You now have <span class="char-max">280</span> characters to play with!</p>
+      <textarea id="tweetInput" maxlength="280" rows="6" placeholder="Type your tweet here..."></textarea>
+      <div class="counter-row">
+        <span class="entered"><span id="enteredCount">0</span> characters entered</span>
+        <span> | </span>
+        <span class="remaining"><span id="remainingCount">280</span> characters remaining</span>
+      </div>
+      <button class="tweet-btn">Tweet</button>
+    </div>
+    <!-- Right: Quote -->
+    <div class="tweet-quote-panel">
+      <blockquote>
+        "No need to risk testing<br>
+        <span class="bold">the size of your tweet</span><br>
+        directly in your corporate Twitter account."
+      </blockquote>
+      <div class="quote-author">Daren Jones, Tweeter</div>
+    </div>
+  </div>
+  <script src="practice.js"></script>
+</body>
+</html>
