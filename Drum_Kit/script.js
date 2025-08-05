@@ -48,3 +48,27 @@ drumButtons.forEach(function(button) {
       playDrumSound(buttonKey);
    });
 });
+
+function buttonAnimation(currentKey) {
+   var activeButton = document.querySelector("." + currentKey);
+   if (activeButton) {
+      activeButton.classList.add("pressed");
+      setTimeout(function() {
+         activeButton.classList.remove("pressed");
+      }, 100);
+   }
+}
+
+// Add animation on keypress
+document.addEventListener("keypress", function(event) {
+   var key = event.key;
+   buttonAnimation(key);
+});
+
+// Add animation on button click
+drumButtons.forEach(function(button) {
+   button.addEventListener("click", function() {
+      var buttonKey = this.innerHTML.toLowerCase();
+      buttonAnimation(buttonKey);
+   })
+});
