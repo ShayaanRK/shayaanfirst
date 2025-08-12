@@ -5,64 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Mini Projects</title>
   <style>
-    /* CSS portion */
     body {
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #333;
-      text-align: center;
+      background: #f5f7fa;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      color: #333;
     }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #4f46e5;
+      color: white;
+    }
+
     h1 {
-      color: #222;
+      font-size: 2.5rem;
     }
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
     }
-    .project {
+
+    .project-card {
       background: white;
-      padding: 20px;
-      border-radius: 10px;
-      width: 250px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 2rem 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .project:hover {
-      transform: scale(1.05);
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
-    a {
+
+    .project-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card h2 {
+      margin: 0.5rem 0;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .project-card a {
       text-decoration: none;
-      color: #0073e6;
-      font-weight: bold;
+      color: inherit;
+      display: block;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>🚀 My Mini Projects</h1>
+    <p>Click on a project to see the live demo</p>
+  </header>
 
-  <h1>Shayaan's Mini-Projects</h1>
-  <p>Click on a project to view the live demo</p>
-
-  <div class="projects">
-    <div class="project">
-      <h3>Simon Game</h3>
-      <a href="https://ShayaanRK.github.io/shayaanfirst/Simon_Game/" target="_blank">Simon Game</a>
+  <main class="project-grid">
+    <div class="project-card">
+      <a href="https://ShayaanRK.github.io/shayaanfirst/Simon_Game/" target="_blank">
+        <div class="project-icon">🎮</div>
+        <h2>Simon Game</h2>
+        <p>A fun memory-based game where you have to imitate sequences of tones and lights.</p>
+      </a>
     </div>
 
-    <div class="project">
-      <h3>Online Drum Kit Player</h3>
-      <a href="https://ShayaanRK.github.io/shayaanfirst/Simon_Game/Drum_Kit" target="_blank">Online Drum Kit</a>
+    <div class="project-card">
+      <a href="https://ShayaanRK.github.io/shayaanfirst/Drum_Kit/" target="_blank">
+        <div class="project-icon">🎵</div>
+        <h2>Online Drum Kit Player</h2>
+        <p>Play drum sounds using keyboard keys or on-screen buttons for a fun interactive music experience.</p>
+      </a>
     </div>
 
-    <div class="project">
-      <h3>Twitter Tweet Limit Counter</h3>
-      <a href="https://ShayaanRK.github.io/shayaanfirst/Simon_Game/Twitter_Counter_Project/" target="_blank">Tweet Limit Counter</a>
+    <div class="project-card">
+      <a href="https://ShayaanRK.github.io/shayaanfirst/Twitter_Counter_Project/" target="_blank">
+        <div class="project-icon">🐦</div>
+        <h2>Twitter Tweet Counter</h2>
+        <p>Check your tweet’s character count in real-time and see how close you are to Twitter’s limit.</p>
+      </a>
     </div>
-  </div>
-
+  </main>
 </body>
 </html>
